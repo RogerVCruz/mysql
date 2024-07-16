@@ -30,3 +30,5 @@ select * from tb_alunos where media > 7.0;
 select * from tb_alunos where media < 7.0;
 
 update tb_alunos set media = 3.5 where id = 10; 
+
+select * from tb_alunos;
