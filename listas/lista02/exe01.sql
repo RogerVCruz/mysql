@@ -39,6 +39,16 @@ INSERT INTO tb_personagens (nome, classe_id, poder, vida, pet) VALUES
 ('Guldan', 3, 3800, 700, 'Demônio');
 
 
-
 select * from tb_personagens where poder > 2000;
 select * from tb_personagens where poder between 1000 and 2000;
+select * from tb_produtos where nome like "%c%";
+
+SELECT *
+FROM tb_personagens
+INNER JOIN tb_classes 
+ON tb_personagens.classe_id = tb_classes.id;
+
+SELECT *
+FROM tb_personagens
+INNER JOIN tb_classes 
+ON tb_personagens.classe_id = tb_classes.id where classe_id = 1;
